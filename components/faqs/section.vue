@@ -52,7 +52,7 @@
 <style scoped>
   .faqs {
     background-image: linear-gradient(to top, rgba(0, 0, 20), rgba(0, 0, 56)),
-      url("images/Sections/sectionBg.png");
+    url("~/public/images/Sections/sectionBg.png");
     background-blend-mode: saturation;
     background-size: contain;
     background-position: center;

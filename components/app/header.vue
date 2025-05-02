@@ -39,8 +39,8 @@
           class="font-medium flex flex-col p-4 md:p-0 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent"
         >
           <li v-for="link in links" :key="link.path" class="relative">
-            <NuxtLink
-              :to="link.path"
+            <a
+              :href="link.path"
               class="block py-3 px-2 md:px-0 text-center md:text-sm lg:text-lg text-white rounded-sm hover:bg-gray-400 md:hover:bg-transparent relative transition duration-300 ease-in-out"
               :class="{ 'md:ms-6': link.path === '#contact' }"
             >
@@ -49,7 +49,7 @@
                 class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-[7px] h-[7px] bg-white rounded-full opacity-0 transition-all duration-300 ease-in-out"
                 :class="{ 'opacity-100': $route.path === link.path }"
               ></span>
-            </NuxtLink>
+          </a>
           </li>
         </ul>
       </div>
@@ -67,8 +67,8 @@
   };
   const links = [
     { name: "عن الحدث", path: "#about" },
-    { name: "الجدول الزمني", path: "/schedule" },
-    { name: "المتحدثين الرئيسين", path: "/speakers" },
+    { name: "الجدول الزمني", path: "#" },
+    { name: "المتحدثين الرئيسين", path: "#" },
     { name: "الاسئله المتكرره", path: "#faqs" },
     { name: "تواصل معنا", path: "#contact" },
   ];

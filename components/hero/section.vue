@@ -44,7 +44,7 @@ const props = defineProps({
 
 <style scoped>
   .hero {
-    background-image: url("images/Hero/heroBg.png");
+    background-image: url("~/public/images/Hero/heroBg.png");
     background-size: cover;
     background-position: center;
   }
